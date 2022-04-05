@@ -1,0 +1,3 @@
+pandas==1.4.2
+pyairtable==1.1.0
+rdflib==6.1.1

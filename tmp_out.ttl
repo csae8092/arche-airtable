@@ -1,0 +1,15 @@
+@prefix ns1: <https://example.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://id.acdh.oeaw.ac.at/amp> a ns1:TopCollection ;
+    ns1:hasCreator <https://id.acdh.oeaw.ac.at/pandorfer> ;
+    ns1:hasEndDate "2024-03-01"^^xsd:date ;
+    ns1:hasIdentifier <https://id.acdh.oeaw.ac.at/amp> ;
+    ns1:hasStartDate "2021-03-01"^^xsd:date ;
+    ns1:hasTitle "Auden Musulin Papers@de",
+        "Auden Musulin Papers@en" .
+
+<https://id.acdh.oeaw.ac.at/pandorfer> a ns1:Person ;
+    ns1:hasIdentifier <https://id.acdh.oeaw.ac.at/pandorfer> ;
+    ns1:hasTitle "Peter Andorfer@und" .
+
