@@ -5,7 +5,12 @@
     ns1:hasCreator <https://id.acdh.oeaw.ac.at/pandorfer> ;
     ns1:hasEndDate "2024-03-01"^^xsd:date ;
     ns1:hasIdentifier <https://id.acdh.oeaw.ac.at/amp> ;
+    ns1:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
     ns1:hasStartDate "2021-03-01"^^xsd:date ;
+    ns1:hasSubject "Amsel",
+        "Drossel",
+        "Fink",
+        "und Star"@de ;
     ns1:hasTitle "Auden Musulin Papers"@de,
         "Auden Musulin Papers"@en .
 

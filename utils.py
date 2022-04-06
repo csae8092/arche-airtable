@@ -41,7 +41,6 @@ def make_object(triple):
     if obj_type == 'string':
         lang_tag = get_lang_tag(triple['obj_val'])
         if lang_tag[0]:
-            val = triple['obj_val'].split()
             obj = Literal(lang_tag[1], lang=lang_tag[0])
         else:
              obj = Literal(triple['obj_val'])
@@ -59,3 +58,14 @@ def make_predicate(pred_val):
         return RDF.type
     else:
         return ACDH_NS[pred_val]
+
+def create_graph(g, airtable):
+    for x in yield_triple(airtable):
+        sub = URIRef(x['sub'])
+        pred = make_predicate(x['pred'])
+        obj = make_object(x)
+        print(sub, pred, obj)
+        g.add(
+            (sub, pred, obj)
+        )
+    return g
